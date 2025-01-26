@@ -3,20 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
+    <title>Super App - Revolucione sua Vida!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        h1 {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
             color: #333;
+        }
+        header {
+            background: #6a1b9a;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+        }
+        .cta-button {
+            background: #ff4081;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .cta-button:hover {
+            background: #e91e63;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .benefits, .testimonials {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        .benefits h2, .testimonials h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .benefits ul {
+            list-style: none;
+            padding: 0;
+        }
+        .benefits ul li {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+        .testimonials .quote {
+            font-style: italic;
+            color: #555;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <h1>Olá, mundo!</h1>
-    <p>Este é o meu site hospedado no GitHub Pages.</p>
+    <header>
+        <h1>Super App</h1>
+        <p>Revolucione sua vida com o aplicativo que faz tudo por você!</p>
+        <a href="#features" class="cta-button">Saiba Mais</a>
+    </header>
+
+    <section id="features" class="benefits">
+        <h2>Por que escolher o Super App?</h2>
+        <ul>
+            <li><i class="fas fa-check"></i> Organize sua vida em um só lugar.</li>
+            <li><i class="fas fa-check"></i> Acesso rápido e fácil.</li>
+            <li><i class="fas fa-check"></i> Compatível com todos os dispositivos.</li>
+        </ul>
+    </section>
+
+    <section class="testimonials">
+        <h2>O que estão dizendo?</h2>
+        <div class="quote">
+            <p>"O Super App mudou minha vida! Agora consigo organizar tudo de forma simples e rápida."</p>
+            <p><strong>- João Silva</strong></p>
+        </div>
+        <div class="quote">
+            <p>"Recomendo para todos que querem otimizar seu tempo e aumentar a produtividade."</p>
+            <p><strong>- Maria Souza</strong></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Super App. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
