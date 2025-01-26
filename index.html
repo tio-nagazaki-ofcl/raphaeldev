@@ -3,110 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super App - Revolucione sua Vida!</title>
+    <title>Raphael Dev - Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
+            background-color: #1e1e2f;
+            color: white;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background: #6a1b9a;
-            color: white;
-            padding: 60px 20px;
             text-align: center;
         }
-        header h1 {
+        header {
+            padding: 100px 20px;
+        }
+        h1 {
             font-size: 3rem;
-            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-        header p {
+        p {
             font-size: 1.2rem;
-            margin: 10px 0 0;
+            margin: 20px 0;
         }
-        .cta-button {
-            background: #ff4081;
+        .btn {
+            background-color: #00BFFF;
             color: white;
-            padding: 15px 30px;
-            text-decoration: none;
+            padding: 10px 20px;
             border-radius: 5px;
-            font-size: 1.2rem;
-            margin-top: 20px;
-            display: inline-block;
+            text-decoration: none;
+            transition: background-color 0.3s;
         }
-        .cta-button:hover {
-            background: #e91e63;
+        .btn:hover {
+            background-color: #FFA500;
         }
         section {
             padding: 40px 20px;
-            text-align: center;
         }
-        .benefits, .testimonials {
-            background: white;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-        }
-        .benefits h2, .testimonials h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-        .benefits ul {
+        #habilidades ul {
             list-style: none;
             padding: 0;
         }
-        .benefits ul li {
+        #habilidades ul li {
             margin: 10px 0;
             font-size: 1.1rem;
         }
-        .testimonials .quote {
-            font-style: italic;
-            color: #555;
+        .projeto {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 600px;
         }
         footer {
-            background: #333;
-            color: white;
-            text-align: center;
+            background-color: #333;
             padding: 20px;
-            margin-top: 40px;
+            margin-top: 50px;
+        }
+        footer a {
+            color: #00BFFF;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #FFA500;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Super App</h1>
-        <p>Revolucione sua vida com o aplicativo que faz tudo por você!</p>
-        <a href="#features" class="cta-button">Saiba Mais</a>
+        <h1>Raphael Dev</h1>
+        <p>Desenvolvedor em formação | HTML, CSS, JavaScript, Python</p>
+        <a href="#sobre" class="btn">Saiba Mais</a>
     </header>
 
-    <section id="features" class="benefits">
-        <h2>Por que escolher o Super App?</h2>
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Meu nome é Raphael, sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> e apaixonado por tecnologia. Atualmente, estou focado em aprender e desenvolver projetos com <strong>HTML, CSS, JavaScript e Python</strong>.</p>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
         <ul>
-            <li><i class="fas fa-check"></i> Organize sua vida em um só lugar.</li>
-            <li><i class="fas fa-check"></i> Acesso rápido e fácil.</li>
-            <li><i class="fas fa-check"></i> Compatível com todos os dispositivos.</li>
+            <li><i class="fab fa-html5"></i> HTML5</li>
+            <li><i class="fab fa-css3-alt"></i> CSS3</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fas fa-database"></i> Banco de Dados</li>
         </ul>
     </section>
 
-    <section class="testimonials">
-        <h2>O que estão dizendo?</h2>
-        <div class="quote">
-            <p>"O Super App mudou minha vida! Agora consigo organizar tudo de forma simples e rápida."</p>
-            <p><strong>- João Silva</strong></p>
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projeto">
+            <h3>Site Pessoal</h3>
+            <p>Meu primeiro site pessoal, desenvolvido com HTML e CSS.</p>
+            <a href="https://github.com/tio-nagazaki-ofcl/raphaeldev" target="_blank" class="btn">Ver no GitHub</a>
         </div>
-        <div class="quote">
-            <p>"Recomendo para todos que querem otimizar seu tempo e aumentar a produtividade."</p>
-            <p><strong>- Maria Souza</strong></p>
+        <div class="projeto">
+            <h3>Calculadora em Python</h3>
+            <p>Uma calculadora simples desenvolvida em Python.</p>
+            <a href="https://github.com/tio-nagazaki-ofcl/outro-projeto" target="_blank" class="btn">Ver no GitHub</a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 Super App. Todos os direitos reservados.</p>
+        <p>&copy; 2023 Raphael Dev. Todos os direitos reservados.</p>
+        <p>Contato: <a href="mailto:seu-email@exemplo.com">seu-email@exemplo.com</a></p>
+        <p>
+            <a href="https://github.com/tio-nagazaki-ofcl" target="_blank"><i class="fab fa-github"></i> Meu GitHub</a>
+        </p>
     </footer>
 </body>
 </html>
